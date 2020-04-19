@@ -1,0 +1,10 @@
+github.com/c4milo/gotoolkit v0.0.0-20190525173301-67483a18c17a h1:+uvtaGSLJh0YpLLHCQ9F+UVGy4UOS542hsjj8wBjvH0=
+github.com/c4milo/gotoolkit v0.0.0-20190525173301-67483a18c17a/go.mod h1:txokOny9wavBtq2PWuHmj1P+eFwpCsj+gQeNNANChfU=
+github.com/hooklift/assert v0.0.0-20170704181755-9d1defd6d214 h1:WgfvpuKg42WVLkxNwzfFraXkTXPK36bMqXvMFN67clI=
+github.com/hooklift/assert v0.0.0-20170704181755-9d1defd6d214/go.mod h1:kj6hFWqfwSjFjLnYW5PK1DoxZ4O0uapwHRmd9jhln4E=
+github.com/hooklift/iso9660 v1.0.0 h1:GYN0ejrqTl1qtB+g+ics7xxWHp7J2B1zmr25O9EyG3c=
+github.com/hooklift/iso9660 v1.0.0/go.mod h1:sOC47ru8lB0DlU0EZ7BJ0KCP5rDqOvx0c/5K5ADm8H0=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/yaml.v2 v2.2.8 h1:obN1ZagJSUGI0Ek/LBmuj4SNLPfIny3KsKFopxRdj10=
+gopkg.in/yaml.v2 v2.2.8/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=

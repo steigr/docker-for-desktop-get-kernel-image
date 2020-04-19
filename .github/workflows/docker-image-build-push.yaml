@@ -1,0 +1,28 @@
+name: Build Docker image
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build_docker_image:
+    runs-on: ubuntu-latest
+    name: Build ZFS user land tools
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to quay.io
+        uses: actions-hub/docker/login@master
+        env:
+          DOCKER_USERNAME: ${{ secrets.QUAY_USER_NAME }}
+          DOCKER_PASSWORD: ${{ secrets.QUAY_USER_PASSWORD }}
+          DOCKER_REGISTRY_URL: quay.io
+
+      - name: Build :latest
+        run: docker build -t quay.io/steigr/docker-for-desktop-get-kernel-image:latest .
+
+      - name: Push to quay.io :latest
+        uses: actions-hub/docker@master
+        with:
+          args: push quay.io/steigr/docker-for-desktop-get-kernel-image:latest
