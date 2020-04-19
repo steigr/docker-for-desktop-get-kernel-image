@@ -20,9 +20,9 @@ jobs:
           DOCKER_REGISTRY_URL: quay.io
 
       - name: Build :latest
-        run: docker build -t quay.io/steigr/docker-for-desktop-get-kernel-image:latest .
+        run: docker build -t ${{ secrets.IMAGE_PREFIX }}/docker-for-desktop-get-kernel-image:latest .
 
       - name: Push to quay.io :latest
         uses: actions-hub/docker@master
         with:
-          args: push quay.io/steigr/docker-for-desktop-get-kernel-image:latest
+          args: push ${{ secrets.IMAGE_PREFIX }}/docker-for-desktop-get-kernel-image:latest
